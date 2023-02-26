@@ -1,0 +1,59 @@
+.example1 {
+
+    &__news {
+        margin: 0 auto;
+    }
+
+    &__image {
+        position: relative;
+
+        img {
+            height: 50rem;
+            display: block;
+            margin: 30px auto 0;
+        }
+    }
+
+    &__text {
+        color: black;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        width: 50%;
+        font-family: 'Neucha', cursive;
+        font-weight: 700;
+    }
+}
+
+.example2 {
+
+    &__news {
+        margin: 0 auto;
+    }
+
+    &__image {
+        position: relative;
+
+        img {
+            height: 60rem;
+            display: block;
+            margin: 30px auto 0;
+        }
+    }
+
+    &__text {
+        color: black;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-55%, -50%);
+        font-size: 24px;
+        width: 50%;
+        font-family: 'Neucha', cursive;
+        font-weight: 700;
+    }
+}
