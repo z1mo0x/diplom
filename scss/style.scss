@@ -31,19 +31,24 @@ body {
         align-items: center;
         justify-content: space-evenly;
         margin-left: 50px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
     }
 }
 
 .socials {
+
     &__rutube {
         img {
             height: 14px;
-            margin-top: 3px;
         }
     }
 
     &__telegram {
-        margin-top: 1px;
+        margin-top: 5px;
     }
 }
 
@@ -107,9 +112,12 @@ body {
     margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 
     &__list {
         display: flex;
+        gap: 75px;
+        align-items: center;
 
         a {
             text-decoration: none;
@@ -117,7 +125,6 @@ body {
 
             li {
                 position: relative;
-                margin-left: 100px;
                 list-style-type: none;
                 font-family: 'Verdana';
                 font-style: normal;
@@ -275,7 +282,7 @@ body {
         margin-top: 30px;
 
         div {
-            width: 450px;
+            width: 100%;
         }
     }
 
@@ -295,7 +302,13 @@ body {
         width: 900px;
     }
 
+    &__teklogo {
+        margin-right: 30px;
+    }
+
     &__muslogo {
+        margin-left: 30px;
+
         img {
             height: 150px;
         }
@@ -319,6 +332,7 @@ body {
         color: white;
         display: flex;
         padding-left: 0;
+        gap: 10px;
 
         a {
             color: white;
@@ -328,7 +342,6 @@ body {
 
                 font-size: 16px;
                 list-style: none;
-                margin-left: 15px;
                 padding-left: 10px;
                 border-left: 1px solid white;
 
@@ -339,3 +352,4 @@ body {
 
 @import 'news';
 @import 'portal';
+@import 'adaptive-index';
