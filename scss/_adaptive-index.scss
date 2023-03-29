@@ -6,6 +6,8 @@
     }
 
     .nav {
+        flex-direction: column;
+
         &__search {
             margin-top: 30px;
         }

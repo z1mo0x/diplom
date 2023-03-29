@@ -1,0 +1,57 @@
+@media (max-width:1200px) {
+    .example1 {
+        margin-top: 100px;
+
+        &__text {
+            font-size: 2.7vw;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .example2 {
+        margin-top: 100px;
+
+        &__text {
+            font-size: 2.7vw;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width:578px) {
+    .example1 {
+        margin-top: 75px;
+
+        &__text {
+            font-size: 3vw;
+            width: 70%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .example2 {
+        margin-top: 75px;
+
+        &__text {
+            font-size: 3vw;
+            width: 70%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
