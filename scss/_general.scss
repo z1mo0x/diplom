@@ -1,0 +1,15 @@
+.title {
+    font-family: Verdana;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+@mixin firstLetter {
+    &::first-letter {
+        font-size: 40px;
+        margin-left: 25px;
+        color: $accent;
+    }
+}
