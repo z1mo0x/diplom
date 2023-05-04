@@ -225,3 +225,23 @@
         text-decoration: underline;
     }
 }
+
+.blog {
+    margin-top: 75px;
+
+    &__wrapper {}
+
+    &__title {
+        color: $accent;
+    }
+
+    &__posts {
+        margin-top: 25px;
+    }
+
+    &__post {}
+
+    &__pagination {
+        margin-top: 30px;
+    }
+}
