@@ -210,6 +210,14 @@ $second-accent: #2969C8;
     &__slide {
         padding-bottom: 30px;
         background: rgba(41, 105, 200, 0.1);
+
+        img {
+            max-height: 400px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            margin: 0 auto;
+        }
     }
 
     &__title {
