@@ -1,0 +1,188 @@
+@media (max-width:1200px) {
+
+    .story {
+        &__block {
+            font-size: 20px;
+        }
+    }
+
+    .admin {
+        &__descr {
+            font-size: 20px;
+        }
+    }
+
+    .exponats {
+        &__slide {
+            img {
+                max-height: 300px;
+                min-height: 300px;
+            }
+        }
+
+        &__slide-title {
+            font-size: 25px;
+        }
+
+        &__descr {
+            font-size: 18px;
+            height: 105px;
+        }
+    }
+
+    .map {
+        &__block {
+            iframe {
+                height: 500px;
+            }
+        }
+    }
+
+    .form {
+        &__wrapper {
+            padding: 0 20px;
+            gap: 10px;
+        }
+
+        img {
+            height: auto !important;
+            width: 50% !important;
+        }
+
+
+        &__block {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:993px) {
+
+    .title {
+        font-size: 32px;
+    }
+
+    .story {
+        margin-top: 50px;
+
+        &__block {
+            font-size: 18px;
+            align-items: center;
+        }
+    }
+
+    .admin {
+        &__descr {
+            font-size: 18px;
+        }
+    }
+
+    .subscribe {
+        &__wrapper {
+            width: 100%;
+        }
+    }
+
+}
+
+
+@media (max-width:993px) {
+
+    .title {
+        font-size: 26px;
+    }
+
+    .story {
+        margin-top: 50px;
+
+        &__block {
+            font-size: 18px;
+            align-items: center;
+            flex-wrap: wrap;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .admin {
+        &__block {
+            flex-wrap: wrap;
+
+            div {
+                width: 100%;
+            }
+        }
+
+        &__descr {
+            font-size: 18px;
+        }
+    }
+
+    .form {
+        &__wrapper {
+            flex-direction: column-reverse;
+            padding: 10px;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .subscribe {
+        &__wrapper {
+            width: 100%;
+        }
+
+        button {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (max-width:568px) {
+    .story {
+        &__block {
+            font-size: 16px;
+        }
+    }
+
+    .exponats {
+        &__descr {
+            font-size: 16px;
+            height: 100px;
+        }
+
+        &__slide-title {
+            font-size: 22px;
+        }
+    }
+
+    .form {
+        &__block {
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    .map {
+        &__block {
+            iframe {
+                height: 300px;
+            }
+        }
+    }
+
+    .subscribe {
+        &__block {
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+}

@@ -130,9 +130,9 @@ $second-accent: #2969C8;
 
 
 .story {
+    margin-top: 100px;
 
     &__title {
-        margin-top: 100px;
         color: $accent;
     }
 
@@ -144,12 +144,8 @@ $second-accent: #2969C8;
         font-weight: 100;
         text-align: justify;
 
-
-
         p {
             font-family: 'Pangolin', cursive;
-
-
             @include firstLetter;
         }
 
@@ -213,6 +209,7 @@ $second-accent: #2969C8;
 
         img {
             max-height: 400px;
+            min-height: 400px;
             object-fit: cover;
             object-position: center;
             display: block;
@@ -297,7 +294,6 @@ $second-accent: #2969C8;
     }
 
     &__wrapper {
-        flex-wrap: wrap;
         display: flex;
         margin-top: 50px;
     }
@@ -344,6 +340,8 @@ $second-accent: #2969C8;
 
         iframe {
             box-shadow: 2px 3px 15px rgba($accent, .5);
+            width: 100%;
+            height: 700px;
         }
     }
 }
@@ -444,3 +442,4 @@ $second-accent: #2969C8;
 @import 'exposition';
 @import 'post';
 @import 'pagination';
+@import 'adaptive';

@@ -49,7 +49,7 @@
     </nav>
     <section class="story">
         <div class="container">
-            <div class="story__title title">История</div>
+            <!-- <div class="story__title title">История</div> -->
             <div class="story__block">
                 <img src="img/story.jpg" alt="">
                 <p>Музей вычислительной техники ГПОУ ТО "ТЭК" был создан в 1986 году, он занимает площадь 65,7 м2. В
@@ -99,7 +99,7 @@
                 Наши экспонаты
             </div>
             <div class="exponats__slider">
-                <swiper-container slides-per-view="2" space-between="50">
+                <swiper-container class="swiper" slides-per-view="2" space-between="50">
                     <swiper-slide>
                         <div class="exponats__slide">
                             <img src="img/exsponats/dima1.png" alt="">
@@ -206,7 +206,7 @@
             <div class="map__block">
                 <iframe
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3A2263bf3b1db1f874faeb08ea9691d8b825f7c6d229c85f5c9503336d71a04179&amp;source=constructor"
-                    width="1200" height="700" frameborder="0">
+                    frameborder="0">
                 </iframe>
             </div>
         </div>
@@ -270,6 +270,9 @@
             swiperEl.swiper.slidePrev();
         });
 
+        if (screen.width < 768) {
+            swiperEl.setAttribute('slides-per-view', '1');
+        }
     </script>
 </body>
 
