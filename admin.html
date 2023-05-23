@@ -9,20 +9,45 @@
     <script src="https://kit.fontawesome.com/d83954f7da.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.min.css">
+    <link rel="stylesheet" href="css/exposition.min.css">
+    <link rel="stylesheet" href="css/adaptive.min.css">
 </head>
 
 <body>
 
     <h1 class="text-center text-6xl mt-12 admin-title">Панель администратора</h1>
-    <section class="admin">
+
+    <section class="template">
         <div class="container">
-            <div class="admin__select">
-                <button class="button"></button>
-                <button class="button"></button>
-                <button class="button"></button>
+            <div class="template__wrapper">
+                <div class="template__accordion">
+                    <div class="template__text">
+                        <div>Выберите шаблон</div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="template__select">
+                    <button class="button">
+                        <img src="img/shablon1.psd.png" alt="">
+                    </button>
+                    <button class="button">
+                        <img src="img/shablon2.psd.png" alt="">
+                    </button>
+                    <button class="button">
+                        <img src="img/shablon3.png" alt="">
+                    </button>
+                </div>
             </div>
         </div>
     </section>
+    <section class="template-main" id="template">
+
+    </section>
+    <button id="editButton">Изменить</button>
+
+    <script src="js/accordion.js"></script>
+    <script src="js/template.js"></script>
 </body>
 
 </html>
