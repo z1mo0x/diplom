@@ -23,9 +23,9 @@ const exspos = [
                 удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в минуту.
                 Она умела считать только на ленту. Она была плохо приспособлена для скоростного набора и могла
                 удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в минуту.
-     
+
             </div>
-            <input type="text" class="hidden" id="exspo1__block-descr"/>
+            <textarea cols="100" rows="10" class="hidden" id="exspo1__block-descr"></textarea>
             <div class="exspo1__block-link">
                 <a href="#">Перейти к новости</a>
             </div>
@@ -46,7 +46,7 @@ const exspos = [
                 <div class="exspo2__block-title">
                     Электромеханическая счётно-табличная машина "АСКОТА"
                 </div>
-                <input type="text" class="hidden"/>
+                <input type="text" class="hidden" id="exspo2__block-title"/>
                 <div class="exspo2__block-descr">
                     Она умела считать только на ленту. Она была плохо приспособлена для скоростного набора и
                     могла
@@ -55,7 +55,7 @@ const exspos = [
                     удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в
                     минуту.
                 </div>
-                <input type="text" class="hidden"/>
+                <textarea cols="50" rows="10" class="hidden" id="exspo2__block-descr"></textarea>
             </div>
         </div>
         <div class="exspo2__downtext">
@@ -69,6 +69,7 @@ const exspos = [
             удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в минуту.
             <input type="text" class="hidden"/>
         </div>
+        <textarea cols="100" rows="10" class="hidden" id="exspo2__block-downtext"></textarea>
         <div class="exspo1__block-link">
             <a href="#">Перейти к новости</a>
         </div>
@@ -93,7 +94,7 @@ const exspos = [
                 <div class="exspo3__block-title">
                     Электромеханическая счётно-табличная машина "АСКОТА"
                 </div>
-                <input type="text" class="hidden"/>
+                <input type="text" class="hidden" id="exspo3__block-title"/>
                 <div class="exspo3__block-descr">
                     Она умела считать только на ленту. Она была плохо приспособлена для скоростного набора и
                     могла
@@ -102,7 +103,7 @@ const exspos = [
                     удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в
                     минуту.
                 </div>
-                <input type="text" class="hidden"/>
+                <textarea cols="50" rows="10" class="hidden" id="exspo3__block-descr"></textarea>
             </div>
         </div>
         <div class="exspo3__block-link">
@@ -127,17 +128,52 @@ templateButtonElements.forEach((button, index) => {
         const exspoDescr1 = document.querySelector('.exspo1__block-descr');
         const exspoTitle1Input = document.getElementById('exspo1__block-title');
         const exspoDescr1Input = document.getElementById('exspo1__block-descr');
+        const exspoTitle2 = document.querySelector('.exspo2__block-title');
+        const exspoDescr2 = document.querySelector('.exspo2__block-descr');
+        const exspoDownText2 = document.querySelector('.exspo2__downtext');
+        const exspoTitle2Input = document.getElementById('exspo2__block-title');
+        const exspoDescr2Input = document.getElementById('exspo2__block-descr');
+        const exspoDownText2Input = document.getElementById('exspo2__block-downtext');
+        const exspoTitle3 = document.querySelector('.exspo3__block-title');
+        const exspoDescr3 = document.querySelector('.exspo3__block-descr');
+        const exspoTitle3Input = document.getElementById('exspo3__block-title');
+        const exspoDescr3Input = document.getElementById('exspo3__block-descr');
 
-        console.log(
-            exspoTitle1, exspoDescr1, exspoTitle1Input, exspoDescr1Input
-        );
 
-        editButton.addEventListener('click', () => {
-            exspoDescr1.classList.toggle('hidden');
-            exspoTitle1.classList.toggle('hidden');
-            exspoTitle1Input.classList.toggle('hidden');
-            exspoDescr1Input.classList.toggle('hidden');
-        })
+
+        if (selectedExspo != null) {
+            if (selectedExspo == 1) {
+                editButton.addEventListener('click', () => {
+                    exspoDescr1.classList.toggle('hidden');
+                    exspoTitle1.classList.toggle('hidden');
+                    exspoTitle1Input.classList.toggle('hidden');
+                    exspoDescr1Input.classList.toggle('hidden'); exspoTitle1.textContent = exspoTitle1Input.value;
+                    exspoDescr1.textContent = exspoDescr1Input.value;
+                })
+            }
+            else if (selectedExspo == 2) {
+                editButton.addEventListener('click', () => {
+                    exspoDescr2.classList.toggle('hidden');
+                    exspoTitle2.classList.toggle('hidden');
+                    exspoDownText2.classList.toggle('hidden');
+                    exspoTitle2Input.classList.toggle('hidden');
+                    exspoDescr2Input.classList.toggle('hidden');
+                    exspoDownText2Input.classList.toggle('hidden');
+                    exspoTitle2.textContent = exspoTitle2Input.value;
+                    exspoDescr2.textContent = exspoDescr2Input.value;
+                    exspoDownText2.textContent = exspoDownText2Input.value;
+                })
+            } else if (selectedExspo == 3) {
+                editButton.addEventListener('click', () => {
+                    exspoDescr3.classList.toggle('hidden');
+                    exspoTitle3.classList.toggle('hidden');
+                    exspoTitle3Input.classList.toggle('hidden');
+                    exspoDescr3Input.classList.toggle('hidden'); exspoTitle3.textContent = exspoTitle3Input.value;
+                    exspoDescr3.textContent = exspoDescr3Input.value;
+                })
+            }
+
+        }
     })
 
 });
