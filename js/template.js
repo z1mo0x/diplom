@@ -15,7 +15,7 @@ const exspos = [
             <div class="exspo1__block-title">
                 Электромеханическая счётно-табличная машина "АСКОТА"
             </div>
-                <input type="text" class="hidden" id="exspo1__block-title"/>
+                <input type="text" placeholder='Введите название экспозиции' class="hidden" id="exspo1__block-title"/>
             <div class="exspo1__block-descr">
                 Она умела считать только на ленту. Она была плохо приспособлена для скоростного набора и могла
                 удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в минуту.
@@ -25,16 +25,15 @@ const exspos = [
                 удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в минуту.
 
             </div>
-            <textarea cols="100" rows="10" class="hidden" id="exspo1__block-descr"></textarea>
+            <textarea placeholder='Введите информацию о экспозиции' cols="100" rows="10" class="hidden" id="exspo1__block-descr"></textarea>
             <div class="exspo1__block-link">
-                <a href="#">Перейти к новости</a>
+                <a href="#">Перейти к главной странице</a>
             </div>
         </div>
     </div>
 </div>`,
     `<div class="exspo2">
 <div class="exspo2__title title">Название</div>
-<input type="text" class="hidden"/>
 <div class="container exspo2__wrapper">
     <div class="exspo2__block">
         <img class="exspo2__bg" src="img/example1.webp" alt="">
@@ -46,7 +45,7 @@ const exspos = [
                 <div class="exspo2__block-title">
                     Электромеханическая счётно-табличная машина "АСКОТА"
                 </div>
-                <input type="text" class="hidden" id="exspo2__block-title"/>
+                <input type="text" placeholder='Введите название экспозиции' class="hidden" id="exspo2__block-title"/>
                 <div class="exspo2__block-descr">
                     Она умела считать только на ленту. Она была плохо приспособлена для скоростного набора и
                     могла
@@ -55,7 +54,7 @@ const exspos = [
                     удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в
                     минуту.
                 </div>
-                <textarea cols="50" rows="10" class="hidden" id="exspo2__block-descr"></textarea>
+                <textarea placeholder='Введите текст экспозиции' cols="50" rows="10" class="hidden" id="exspo2__block-descr"></textarea>
             </div>
         </div>
         <div class="exspo2__downtext">
@@ -69,15 +68,14 @@ const exspos = [
             удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в минуту.
             <input type="text" class="hidden"/>
         </div>
-        <textarea cols="100" rows="10" class="hidden" id="exspo2__block-downtext"></textarea>
+        <textarea placeholder='Введите текст экспозиции' cols="100" rows="10" class="hidden" id="exspo2__block-downtext"></textarea>
         <div class="exspo1__block-link">
-            <a href="#">Перейти к новости</a>
+            <a href="#">Перейти к главной странице</a>
         </div>
     </div>
 </div>
 </div>`, `<div class="exspo3">
 <div class="exspo3__title title">Название</div>
-<input type="text" class="hidden"/>
 <div class="container exspo3__wrapper">
     <div class="exspo3__block">
         <img class="exspo3__bg" src="img/example4.webp" alt="">
@@ -94,7 +92,7 @@ const exspos = [
                 <div class="exspo3__block-title">
                     Электромеханическая счётно-табличная машина "АСКОТА"
                 </div>
-                <input type="text" class="hidden" id="exspo3__block-title"/>
+                <input type="text" placeholder='Введите название экспозиции' class="hidden" id="exspo3__block-title"/>
                 <div class="exspo3__block-descr">
                     Она умела считать только на ленту. Она была плохо приспособлена для скоростного набора и
                     могла
@@ -103,11 +101,11 @@ const exspos = [
                     удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в
                     минуту.
                 </div>
-                <textarea cols="50" rows="10" class="hidden" id="exspo3__block-descr"></textarea>
+                <textarea placeholder='Введите текст экспозиции' cols="50" rows="10" class="hidden" id="exspo3__block-descr"></textarea>
             </div>
         </div>
         <div class="exspo3__block-link">
-            <a href="#">Перейти к новости</a>
+            <a href="#">Перейти к главной странице</a>
         </div>
     </div>
 </div>
@@ -174,12 +172,12 @@ templateButtonElements.forEach((button, index) => {
             } else if (selectedExspo == 3) {
                 editButton.addEventListener('click', () => {
                     exspoDescr3.classList.toggle('hidden');
-                    const titles = document.querySelector('.title');
+                    const title = document.querySelector('.title');
                     exspoTitle3.classList.toggle('hidden');
                     exspoTitle3Input.classList.toggle('hidden');
                     exspoDescr3Input.classList.toggle('hidden'); exspoTitle3.textContent = exspoTitle3Input.value;
                     exspoDescr3.textContent = exspoDescr3Input.value;
-                    itle.textContent = exspoTitle3Input.value;
+                    title.textContent = exspoTitle3Input.value;
                 })
             }
         }
