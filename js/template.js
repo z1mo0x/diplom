@@ -4,7 +4,6 @@ const templateButtonElements = document.querySelectorAll('.template__select > bu
 const exspos = [
     `<div class="exspo1">
     <div class="exspo1__title title">Название</div>
-    <input type="text" class="hidden" id="exspo1__title"/>
     <div class="container exspo1__wrapper">
         <div class="exspo1__block">
             <img class="exspo1__bg" src="img/example2.webp" alt="">
@@ -12,11 +11,11 @@ const exspos = [
                 <img src="img/exspo1.jpg" alt="">
                 <img src="img/exspo2.jpg" alt="">
             </div>
-            <div class="exspo1__block-title">
+            <div class="exspo1__block-title hidden">
                 Электромеханическая счётно-табличная машина "АСКОТА"
             </div>
-                <input type="text" placeholder='Введите название экспозиции' class="hidden" id="exspo1__block-title"/>
-            <div class="exspo1__block-descr">
+                <input type="text" placeholder='Введите название экспозиции' class="" id="exspo1__block-title"/>
+            <div class="exspo1__block-descr hidden">
                 Она умела считать только на ленту. Она была плохо приспособлена для скоростного набора и могла
                 удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в минуту.
                 Она умела считать только на ленту. Она была плохо приспособлена для скоростного набора и могла
@@ -25,7 +24,7 @@ const exspos = [
                 удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в минуту.
 
             </div>
-            <textarea placeholder='Введите информацию о экспозиции' cols="100" rows="10" class="hidden" id="exspo1__block-descr"></textarea>
+            <textarea placeholder='Введите информацию о экспозиции' cols="100" rows="10" class="" id="exspo1__block-descr"></textarea>
             <div class="exspo1__block-link">
                 <a href="#">Перейти к главной странице</a>
             </div>
@@ -42,11 +41,11 @@ const exspos = [
                 <img src="img/exspo1.jpg" alt="">
             </div>
             <div class="exspo2__text">
-                <div class="exspo2__block-title">
+                <div class="exspo2__block-title  hidden">
                     Электромеханическая счётно-табличная машина "АСКОТА"
                 </div>
-                <input type="text" placeholder='Введите название экспозиции' class="hidden" id="exspo2__block-title"/>
-                <div class="exspo2__block-descr">
+                <input type="text" placeholder='Введите название экспозиции' class="" id="exspo2__block-title"/>
+                <div class="exspo2__block-descr  hidden">
                     Она умела считать только на ленту. Она была плохо приспособлена для скоростного набора и
                     могла
                     удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в
@@ -54,10 +53,10 @@ const exspos = [
                     удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в
                     минуту.
                 </div>
-                <textarea placeholder='Введите текст экспозиции' cols="50" rows="10" class="hidden" id="exspo2__block-descr"></textarea>
+                <textarea placeholder='Введите текст экспозиции' cols="50" rows="10" class="" id="exspo2__block-descr"></textarea>
             </div>
         </div>
-        <div class="exspo2__downtext">
+        <div class="exspo2__downtext hidden">
             Она умела считать только на ленту. Она была плохо приспособлена для скоростного набора и могла
             удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в минуту.
             Она умела считать только на ленту. Она была плохо приспособлена для скоростного набора и могла
@@ -66,9 +65,8 @@ const exspos = [
             удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в минуту.
             Она умела считать только на ленту. Она была плохо приспособлена для скоростного набора и могла
             удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в минуту.
-            <input type="text" class="hidden"/>
         </div>
-        <textarea placeholder='Введите текст экспозиции' cols="100" rows="10" class="hidden" id="exspo2__block-downtext"></textarea>
+        <textarea placeholder='Введите текст экспозиции' cols="100" rows="10" class="" id="exspo2__block-downtext"></textarea>
         <div class="exspo1__block-link">
             <a href="#">Перейти к главной странице</a>
         </div>
@@ -89,11 +87,11 @@ const exspos = [
                 <img src="img/exspo1.jpg" alt="">
             </div>
             <div class="exspo3__text">
-                <div class="exspo3__block-title">
+                <div class="exspo3__block-title hidden">
                     Электромеханическая счётно-табличная машина "АСКОТА"
                 </div>
-                <input type="text" placeholder='Введите название экспозиции' class="hidden" id="exspo3__block-title"/>
-                <div class="exspo3__block-descr">
+                <input type="text" placeholder='Введите название экспозиции' id="exspo3__block-title"/>
+                <div class="exspo3__block-descr hidden">
                     Она умела считать только на ленту. Она была плохо приспособлена для скоростного набора и
                     могла
                     удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в
@@ -101,7 +99,7 @@ const exspos = [
                     удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в
                     минуту.
                 </div>
-                <textarea placeholder='Введите текст экспозиции' cols="50" rows="10" class="hidden" id="exspo3__block-descr"></textarea>
+                <textarea placeholder='Введите текст экспозиции' cols="50" rows="10" class="" id="exspo3__block-descr"></textarea>
             </div>
         </div>
         <div class="exspo3__block-link">
