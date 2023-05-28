@@ -170,6 +170,11 @@ body {
         align-items: center;
         margin-top: 50px;
         text-align: justify;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
     }
 
     &__image {
@@ -372,12 +377,12 @@ body {
             height: 40px;
             border: 1px solid #000;
             padding-left: 15px;
-
         }
 
         button {
             background: $second-accent;
             height: 40px;
+            margin-top: 15px;
             padding: 0px 15px;
             color: white;
         }
@@ -480,6 +485,5 @@ body {
 @import 'exposition';
 @import 'post';
 @import 'pagination';
-@import 'adaptive';
-@import 'admin';
 @import 'not-found';
+@import 'adaptive';

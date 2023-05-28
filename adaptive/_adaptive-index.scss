@@ -144,6 +144,7 @@
 }
 
 @media (max-width:568px) {
+
     .story {
         &__block {
             font-size: 16px;
@@ -162,7 +163,8 @@
     }
 
     .title {
-        font-size: 20px;
+        text-align: center;
+        font-size: 20px !important;
     }
 
     .form {
@@ -183,6 +185,7 @@
 
     .subscribe {
         &__block {
+
             input {
                 width: 100%;
             }
