@@ -53,7 +53,7 @@ const exspos = [
                     удовлетворять потребностям только юных бухгалтеров, работающих со скоростью 60 знаков в
                     минуту.
                 </div>
-                <textarea placeholder='Введите текст экспозиции' cols="50" rows="10" class="" id="exspo2__block-descr"></textarea>
+                <textarea placeholder='Введите текст экспозиции' cols="40" rows="10" class="" id="exspo2__block-descr"></textarea>
             </div>
         </div>
         <div class="exspo2__downtext hidden">
