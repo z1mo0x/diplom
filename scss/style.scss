@@ -143,6 +143,15 @@ body {
         color: $accent;
     }
 
+    &__image {
+        width: 50%;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
     &__block {
         display: flex;
         margin-top: 50px;
@@ -150,16 +159,15 @@ body {
         gap: 25px;
         font-weight: 100;
         text-align: justify;
+        float: left;
 
         p {
+            width: 50%;
             font-family: 'Pangolin', cursive;
             @include firstLetter;
         }
 
-        img {
-            width: 50%;
-            height: 100%;
-        }
+
     }
 }
 
